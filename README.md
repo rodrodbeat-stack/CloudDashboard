@@ -26,7 +26,7 @@ Abre `index.html` en un navegador moderno. No requiere Node.js, compilación, de
 - Radar animado de amenazas.
 - Vista ilustrativa de regiones Azure y recursos ficticios.
 - Hallazgos priorizados y flujo de eventos simulado.
-- Flujo DevSecOps desde commit hasta gate de producción.
+- Flujo DevSecOps desde commit, build, pruebas unitarias y seguridad hasta integración, certificación, QA, preproducción, aprobación, producción y monitoreo.
 - Navegación por módulos, reloj local y exportación de informe JSON de demostración.
 - Diseño adaptable a escritorio y móvil.
 - Workflow automatizado para GitHub Pages.

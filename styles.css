@@ -48,3 +48,6 @@ body:before{background-image:linear-gradient(#1a4d7a18 1px,transparent 1px),line
 .pipe-node{flex:0 0 125px;min-width:125px}
 .pipeline-foot{border-top:1px solid #1a3553}
 @media(max-width:760px){.pipe-node{flex-basis:118px;min-width:118px}}
+
+/* Azure pipeline certification stage */
+.pipe-node.cert-node{border-color:#4c67a8;background:#101f3d}.pipe-node.cert-node>span,.pipe-node.cert-node i{color:#b3c8ff}
