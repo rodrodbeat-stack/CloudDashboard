@@ -1,56 +1,23 @@
-# SKYNET // Azure Security & Governance Ops
+# CYBERUNDER // CloudDashboardv2
 
-Dashboard web futurista orientado a **Cloud Security, seguridad de Azure, gobernanza, DevSecOps y observabilidad**. Preparado para el repositorio [`rodrodbeat-stack/Seguridad-Governanza`](https://github.com/rodrodbeat-stack/Seguridad-Governanza).
+Dashboard cyberpunk responsive para GitHub Pages. Cada tarjeta de `SYSTEM MODULES — INFRASTRUCTURE OVERVIEW` abre un flujo operativo distinto:
 
-> **Estado actual: demo visual.** Las métricas, alertas, recursos y eventos mostrados son simulados; no representan telemetría de una suscripción real de Azure.
+- **Cloud Fabric**: inventario → clasificación → landing zone → guardrails → FinOps → cumplimiento.
+- **Zero Trust Grid**: identidad → riesgo → inspección → política → contención → auditoría.
+- **CI/CD Command**: Git → Build → QA → Cert/Security → Prod/Release (dashboard separado `cicd.html`).
+- **Telemetry Nexus**: ingestión → normalización → correlación → detección → triage → reporte SLO.
+- **Network Mesh**: topología → rutas → trazado → filtros → DNS → conectividad.
+- **IaC Foundry**: source → calidad → plan → políticas → provisionamiento → drift.
 
-## Publicación en GitHub Pages
+## Publicar
+1. Descomprime el ZIP.
+2. Sube el contenido de la carpeta `CloudDashboardv2` a la raíz del repositorio GitHub Pages.
+3. Mantén la estructura `assets/` y los archivos HTML en la raíz.
+4. Abre `index.html` y entra en cada tarjeta para probar su flujo.
 
-Este repositorio incluye un workflow de GitHub Actions en `.github/workflows/deploy-pages.yml` para publicar el sitio al hacer push a `main`.
-
-1. Sube **todo el contenido** de este ZIP a la raíz de `Seguridad-Governanza`, incluyendo la carpeta oculta `.github/workflows/`.
-2. En GitHub abre **Settings → Pages**.
-3. En **Build and deployment**, selecciona **GitHub Actions** como Source.
-4. Entra en **Actions** y revisa el workflow `Deploy SKYNET Security Governance to GitHub Pages`.
-5. Cuando termine correctamente, abre: https://rodrodbeat-stack.github.io/Seguridad-Governanza/
-
-La URL estará disponible una vez que Pages esté habilitado y el workflow termine correctamente.
-
-## Ejecutar localmente
-
-Abre `index.html` en un navegador moderno. No requiere Node.js, compilación, dependencias ni claves API.
-
-## Incluye
-
-- Command Center con métricas de postura, hallazgos, inventario e identidad.
-- Radar animado de amenazas.
-- Vista ilustrativa de regiones Azure y recursos ficticios.
-- Hallazgos priorizados y flujo de eventos simulado.
-- Flujo DevSecOps desde commit, build, pruebas unitarias y seguridad hasta integración, certificación, QA, preproducción, aprobación, producción y monitoreo.
-- Navegación por módulos, reloj local y exportación de informe JSON de demostración.
-- Diseño adaptable a escritorio y móvil.
-- Workflow automatizado para GitHub Pages.
-
-## Integración real de Azure: siguiente fase
-
-Para conectar datos reales se necesita un backend autenticado. Se recomienda Microsoft Entra ID, permisos mínimos mediante RBAC y acceso de solo lectura inicialmente. Las consultas a Azure Resource Graph, Microsoft Defender for Cloud, Azure Monitor / Log Analytics y Microsoft Sentinel (si está habilitado) deben ejecutarse en el backend; nunca publiques secretos, credenciales ni claves en el frontend estático.
-
-## Estructura
-
-```text
-Seguridad-Governanza/
-├── .github/workflows/deploy-pages.yml
-├── assets/
-├── index.html
-├── styles.css
-├── app.js
-├── .nojekyll
-└── README.md
-```
+## Importante
+Los flujos, logs y métricas son demostraciones visuales en el navegador; no ejecutan acciones reales en AWS, Azure, GCP, Terraform ni sistemas de seguridad.
 
 
-## Navegación interactiva
-
-El menú lateral cambia entre módulos y cada sección presenta métricas, tablas y filtros interactivos: infraestructura, detección de amenazas, identidades, gobernanza, DevSecOps y observabilidad. Cada vista permite filtrar los registros de demostración y exportar su información a JSON.
-
-**Aviso:** las métricas, recursos, eventos y resultados son simulados. No existe conexión a una suscripción de Azure ni deben usarse como evidencia de seguridad real.
+### Zero Trust Architecture
+La página `zero-trust.html` contiene tres flujos independientes: Users, Applications e Infrastructure. Cada flujo tiene sus propias etapas, logs y botón de ejecución. Es una simulación visual y no se conecta a sistemas productivos.
